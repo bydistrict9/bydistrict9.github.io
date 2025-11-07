@@ -164,3 +164,113 @@ body {
 .event-card p {
   font-size: 1.1rem;
 }
+/* Contact Page Styling */
+.contact-hero {
+  height: 70vh;
+  background: url('https://codehs.com/uploads/5c7d6852-75b0-4a1b-8048-8d5a06068225.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-hero .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.contact-hero h1 span {
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 700px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff0080;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact-form .name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: #ff0080;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0080, 0 0 40px #ff0080;
+}
+
+/* Footer */
+.footer {
+  background: #0a0a0a;
+  padding: 50px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.footer h3 {
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff0080;
+}
+
