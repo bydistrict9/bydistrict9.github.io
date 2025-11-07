@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #3a0ca3);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ff0080, 0 0 30px #ff0080;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar nav ul li a:hover {
+  color: #ff0080;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('https://codehs.com/uploads/c8bbd79f6ac140bcea4992f648e1b43b') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero .overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 50px;
+  border-radius: 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.hero h1 span {
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #ff0080;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+.hero .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff0080, 0 0 40px #ff0080;
+}
+
+/* Ticker */
+/* Ticker container */
+.ticker {
+  position: relative;
+  overflow: hidden;
+  background: #ff0080;
+  color: #fff;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+/* Inner wrapper */
+.ticker__wrap {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: scroll 15s linear infinite;
+}
+
+/* The text content */
+.ticker__content {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Infinite seamless scroll with perfect right-to-left entry */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* Duplicate trick to make it seamless */
+.ticker__content::after {
+  content: attr(data-duplicate);
+  display: inline-block;
+}
+
+
+
+
+
+
+/* Event Cards */
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+.event-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff0080, 0 0 40px #ff0080;
+}
+.event-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+.event-card h2 {
+  margin: 20px 0 10px;
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080;
+}
+.event-card p {
+  font-size: 1.1rem;
+}
